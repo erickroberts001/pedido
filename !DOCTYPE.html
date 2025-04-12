@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jovem Tech - Resultado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    body {
+      background: url('https://i.ibb.co/hYF5L8F/demonslayer-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 40px;
+      max-width: 600px;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #ff6b6b;
+      font-weight: bold;
+    }
+
+    .button {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e04e4e;
+    }
+
+    .anime-ref {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Antes do Resultado...</h1>
+    <p>Sei que você estava esperando ver o resultado do Jovem Tech aqui, e confesso: <span class="highlight">eu também queria poder mostrar isso agora</span>.</p>
+
+    <p>Mas mais importante do que qualquer seletivo é você saber que <span class="highlight">eu me importo</span>, mesmo quando erro, mesmo quando não pareço demonstrar como deveria.</p>
+
+    <p>Eu não tenho uma lâmina para enfrentar seus demônios por você... mas como o Tanjiro, <span class="highlight">eu posso estar ao seu lado</span>, firme, até que a dor passe, até que a luz volte a brilhar.</p>
+
+    <p>Você não está sozinha. E eu tô tentando — de verdade — ser alguém melhor pra você.</p>
+
+    <p class="anime-ref">"Mesmo que você não consiga perdoar, eu vou continuar tentando." – Tanjiro Kamado</p>
+
+    <a href="#" class="button" onclick="alert('Me encontre pessoalmente... e eu te conto o resultado. 💛')">Descobrir o Resultado</a>
+
+    <footer>
+      Feito com carinho por alguém que não quer te perder.
+    </footer>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2023/03/28/audio_418e56a87e.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.3
+        },
+        "size": {
+          "value": 3
+        },
+        "move": {
+          "enable": true,
+          "speed": 1
+        }
+      }
+    });
+  </script>
+</body>
+</html>
